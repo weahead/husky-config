@@ -1,6 +1,6 @@
 {
   "name": "@weahead/husky-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "We aheads Husky configuration",
   "main": "index.js",
   "scripts": {
