@@ -7,6 +7,9 @@
     "lint-staged": "npm run prettier",
     "prettier": "prettier --write '**/**.js'"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weahead/husky-config.git"
