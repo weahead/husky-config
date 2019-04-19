@@ -1,12 +1,15 @@
 {
   "name": "@weahead/husky-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "We aheads Husky configuration",
   "main": "index.js",
   "scripts": {
     "lint-staged": "npm run prettier",
     "prettier": "prettier --write '**/**.js'"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weahead/husky-config.git"
