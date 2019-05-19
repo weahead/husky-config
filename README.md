@@ -5,7 +5,7 @@
 ## Install
 
 ```
-npm i -DE husky @weahead/husky-config
+npx install-peerdeps -d -x '-E' @weahead/husky-config
 ```
 
 Create a `.husky.js` file in the root of your project with:
