@@ -8,7 +8,7 @@
 npx install-peerdeps -d -x '-E' @weahead/husky-config
 ```
 
-Create a `.husky.js` file in the root of your project with:
+Create a `.huskyrc.js` file in the root of your project with:
 
 ```
 module.exports = require('@weahead/husky-config');
