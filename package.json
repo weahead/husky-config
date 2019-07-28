@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "commit",
-    "lint-staged": "npm run prettier",
-    "prettier": "prettier --write '**/**.md' '**/**.js'"
+    "prettier": "prettier --write '*.js' '*.json' '*.md'"
   },
   "files": [
     "index.js"
