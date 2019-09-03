@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo "module.exports = require('@weahead/husky-config');" > "${INIT_CWD}/.huskyrc.js"
+if [ ! -f "${INIT_CWD}/.huskyrc.js" ]; then
+  echo "module.exports = require('@weahead/husky-config');" > "${INIT_CWD}/.huskyrc.js"
+fi
