@@ -4,7 +4,6 @@
   "description": "We aheads Husky configuration",
   "main": "index.js",
   "scripts": {
-    "commit": "commit",
     "lint": "eslint --fix '**/*.js' '**/*.json'",
     "lint:md": "markdownlint *.md",
     "prettier": "prettier --write '*.js' '*.json' '*.md'",
