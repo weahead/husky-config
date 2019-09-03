@@ -7,7 +7,8 @@
     "commit": "commit",
     "lint": "eslint --fix '**/*.js' '**/*.json'",
     "lint:md": "markdownlint *.md",
-    "prettier": "prettier --write '*.js' '*.json' '*.md'"
+    "prettier": "prettier --write '*.js' '*.json' '*.md'",
+    "postinstall": "npx install-peerdeps -o -d -x '-E' @weahead/husky-config"
   },
   "files": [
     "index.js",
@@ -41,6 +42,8 @@
     "prettier": "1.18.2"
   },
   "peerDependencies": {
+    "@commitlint/cli": ">=8",
+    "commitizen": ">=4",
     "husky": ">=2",
     "lint-staged": ">=8",
     "package-change-checker": ">=1"
