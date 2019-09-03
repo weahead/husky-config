@@ -10,7 +10,8 @@
     "prettier": "prettier --write '*.js' '*.json' '*.md'"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "helpers/*"
   ],
   "repository": {
     "type": "git",
