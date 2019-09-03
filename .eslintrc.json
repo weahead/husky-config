@@ -1,0 +1,3 @@
+{
+  "extends": ["@weahead/eslint-config-tool"]
+}

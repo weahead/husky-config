@@ -1,14 +1,18 @@
 {
   "name": "@weahead/husky-config",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "We aheads Husky configuration",
   "main": "index.js",
   "scripts": {
-    "lint-staged": "npm run prettier",
-    "prettier": "prettier --write '**/**.md' '**/**.js'"
+    "lint": "eslint --fix '**/*.js' '**/*.json'",
+    "lint:md": "markdownlint *.md",
+    "prettier": "prettier --write '*.js' '*.json' '*.md'",
+    "postinstall": "./scripts/postinstall.sh"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "helpers/*",
+    "scripts/*"
   ],
   "repository": {
     "type": "git",
@@ -21,14 +25,26 @@
   },
   "homepage": "https://github.com/weahead/husky-config#readme",
   "devDependencies": {
-    "@weahead/lint-staged-config": "0.2.0",
-    "@weahead/prettier-config": "0.1.2",
-    "husky": "2.3.0",
-    "lint-staged": "8.1.7",
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
+    "@commitlint/prompt-cli": "8.1.0",
+    "@weahead/commitlint-config": "0.1.3",
+    "@weahead/eslint-config-tool": "0.1.1",
+    "@weahead/lint-staged-config": "0.3.1",
+    "@weahead/markdownlint-config": "0.1.0",
+    "@weahead/prettier-config": "0.1.3",
+    "commitizen": "4.0.3",
+    "eslint": "6.3.0",
+    "eslint-plugin-json": "1.4.0",
+    "husky": "3.0.5",
+    "lint-staged": "9.2.5",
+    "markdownlint-cli": "0.18.0",
     "package-change-checker": "1.2.4",
-    "prettier": "1.17.1"
+    "prettier": "1.18.2"
   },
   "peerDependencies": {
+    "@commitlint/cli": ">=8",
+    "commitizen": ">=4",
     "husky": ">=2",
     "lint-staged": ">=8",
     "package-change-checker": ">=1"
