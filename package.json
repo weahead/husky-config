@@ -8,11 +8,12 @@
     "lint": "eslint --fix '**/*.js' '**/*.json'",
     "lint:md": "markdownlint *.md",
     "prettier": "prettier --write '*.js' '*.json' '*.md'",
-    "postinstall": "npx install-peerdeps -o -d -x '-E' @weahead/husky-config"
+    "postinstall": "./scripts/postinstall.sh"
   },
   "files": [
     "index.js",
-    "helpers/*"
+    "helpers/*",
+    "scripts/*"
   ],
   "repository": {
     "type": "git",
