@@ -18,8 +18,8 @@ else
     echo "❌  Commit message is not valid."
     echo "🖊️  Starting commitizen to help author a commit message..."
     echo
-    # Let the error message sit for a second so that the user sees it
-    sleep 2
+    # Let the error message sit for a second so that the user registers/sees it
+    sleep 1
   fi
 fi
 
