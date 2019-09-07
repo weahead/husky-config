@@ -5,4 +5,7 @@ if [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --
   exit 0
 fi
 
-package-change-checker ${HUSKY_GIT_PARAMS}
+# The command to run is passed from index.js
+cmd="${1}"
+
+package-change-checker --install-cmd="${cmd}" ${HUSKY_GIT_PARAMS}
