@@ -1,6 +1,6 @@
 {
   "name": "@weahead/husky-config",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "We aheads Husky configuration",
   "main": "index.js",
   "scripts": {
@@ -45,6 +45,7 @@
   "peerDependencies": {
     "@commitlint/cli": ">=8",
     "commitizen": ">=4",
+    "cz-conventional-changelog": ">=3",
     "husky": ">=2",
     "lint-staged": ">=8",
     "package-change-checker": ">=1"
