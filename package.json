@@ -45,6 +45,7 @@
   "peerDependencies": {
     "@commitlint/cli": ">=8",
     "commitizen": ">=4",
+    "cz-conventional-changelog": ">=3",
     "husky": ">=2",
     "lint-staged": ">=8",
     "package-change-checker": ">=1"
