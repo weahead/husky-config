@@ -76,4 +76,4 @@ else
 fi
 
 # In all other cases, use commitizen to author commit message
-(exec < /dev/tty && git cz --hook)
+(exec < /dev/tty && wa-commitizen --hook)
