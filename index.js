@@ -5,7 +5,7 @@ const cmd = `${isYarn ? 'yarn' : 'npm'} install`;
 
 module.exports = {
   hooks: {
-    'pre-commit': 'lint-staged',
+    'pre-commit': `${basePath}/helpers/pre-commit.sh && lint-staged`,
     'prepare-commit-msg': `${basePath}/helpers/prepare-commit-msg.sh`,
     'commit-msg': 'commitlint -E HUSKY_GIT_PARAMS',
     'post-merge': `package-change-checker --install-cmd="${cmd}"`,
